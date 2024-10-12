@@ -165,10 +165,10 @@ void Nhap(So& a)
         puts("Khong hop le.");
     }
     //Nhap ho ten khach hang
+    cin.ignore();
     while (true)
     {
         printf("Ho ten (30 ki tu): ");
-        cin.ignore();
         getline(cin, buf);
         if (buf.size() < 31 && valid_str(&buf[0], 1))
         {
@@ -190,10 +190,10 @@ void Nhap(So& a)
         puts("Khong hop le.");
     }
     //Nhap ngay mo so
+    cin.ignore();
     while (true)
     {
-        printf("Ngay mo so(dd/yy/mmmm): ");
-        cin.ignore();
+        printf("Ngay mo so(dd/mm/yyyy): ");
         getline(cin, buf);
         if (buf.size() < 21 && valid_date(&buf[0]))
         {
@@ -271,11 +271,11 @@ void Timkiem()
         {
             case 1: //Tim kiem theo CMND
                 found = false;
+                cin.ignore();
                 while (true)
                 {
                     //Nhap CMND tu nguoi dung
                     printf("Chung minh nhan dan(9/12 so): ");
-                    cin.ignore();
                     getline(cin, buf);
                     if ((buf.size() == 9 || buf.size() == 12) && valid_str(&buf[0], 2))
                         break;
@@ -324,7 +324,7 @@ void Timkiem()
                 puts("Khoang can tim kiem:");
                 while (true)
                 {
-                    printf("Gio han duoi(dd/yy/mmmm): ");
+                    printf("Gio han duoi(dd/mm/yyyy): ");
                     cin >> buf;
                     if (buf.size() < 21 && valid_date(&buf[0]))
                         break;
@@ -336,7 +336,7 @@ void Timkiem()
                 //Nhap gioi han tren cua khoang thoi gian
                 while (true)
                 {
-                    printf("Gio han tren(dd/yy/mmmm): ");
+                    printf("Gio han tren(dd/mm/yyyy): ");
                     cin >> buf;
                     if (buf.size() < 21 && valid_date(&buf[0]))
                         break;
