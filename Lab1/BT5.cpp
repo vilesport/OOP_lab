@@ -131,5 +131,7 @@ int main()
     tinh();
     puts("Ngay truoc la:");
     xuat();
-    printf("Ngay nay la ngay thu %d trong nam", code + 1);
+    code++;
+    tinh();
+    printf("Ngay nay la ngay thu %d trong nam", code);
 }
