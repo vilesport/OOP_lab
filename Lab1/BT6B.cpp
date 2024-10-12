@@ -209,7 +209,7 @@ void Timtrungbinh()
 		if (arr[i].Trungbinh > res.Trungbinh)
 			res = arr[i];
 	puts("Hoc sinh co diem trung binh cao nhat la:");
-	Xuat(res, 0);
+	Xuat(res, 1);
 }
 
 /**
