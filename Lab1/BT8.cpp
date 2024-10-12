@@ -355,8 +355,6 @@ void Timkiem()
                 if (!found)
                     puts("Khong tim thay.");  //Thong bao neu khong tim thay so trong khoang thoi gian
                 return;
-            default:
-                return;
         }
     }
 }
