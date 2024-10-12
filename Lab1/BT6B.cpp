@@ -69,15 +69,12 @@ bool equal(string a, string b)
 {
 	if (a.size() > b.size())
 		return false;
-	for (int i = (int)(b.size() - a.size()); i < b.size(); i++)
+	for (int i = (int)(b.size() - a.size()), j = 0; i < b.size(); i++, j++)
 	{
-		for (int j = 0; j < i + a.size(); j++)
-		{
-			//So sanh khong phan biet chu hoa va chu thuong
-			if (b[i] == a[j] || char(b[i] - ('a' - 'A')) == a[i] || b[i] == char(a[i] - ('a' - 'A')))
-				continue;
-			return false;
-		}
+		//So sanh khong phan biet chu hoa va chu thuong
+		if (b[i] == a[j] || char(b[i] - ('a' - 'A')) == a[j] || b[i] == char(a[j] - ('a' - 'A')))
+			continue;
+		return false;
 	}
 	return true;
 }
