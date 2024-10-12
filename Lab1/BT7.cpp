@@ -389,7 +389,6 @@ void Dem()
         return;
     }
     printf("Noi den: ");
-    cin.ignore();
     getline(cin, buf2);
     if (buf2.size() > 20 && !valid_str(&buf2[0], 1))
     {
