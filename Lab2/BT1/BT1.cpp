@@ -1,14 +1,5 @@
 #include "Diem.h"
 
-/**
- * @brief Chuong trinh chinh kiem tra cac thao tac tren doi tuong diem.
- *
- * Chuong trinh tao va kiem thu cac doi tuong Diem bang cach:
- * - Khoi tao diem mac dinh va cac diem voi toa do chi dinh.
- * - Sao chep diem.
- * - Thay doi toa do cua diem.
- * - Thuc hien phep tinh tien diem theo vector nguoi dung nhap.
- */
 int main()
 {
 	int u, v;
