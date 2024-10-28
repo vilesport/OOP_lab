@@ -30,10 +30,13 @@ void TamGiac::Xuat()
 	cout << "Toa do 3 diem cua tam giac\n";
 	cout << "A: ";
 	A.Xuat();
+	cout << "\n";
 	cout << "B: ";
 	B.Xuat();
+	cout << "\n";
 	cout << "C: ";
 	C.Xuat();
+	cout << "\n";
 	return;
 }
 
