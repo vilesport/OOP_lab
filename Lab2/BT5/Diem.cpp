@@ -84,6 +84,7 @@ void Diem::SetHoanhDo(float Hoanh)
  * @brief Tinh tien diem theo mot vector (u, v).
  * @param u Gia tri tinh tien theo phuong x.
  * @param v Gia tri tinh tien theo phuong y.
+ * Tinh tien 1 diem A(x, y) 1 vector B(u, v) se tao ra diem A'(x + u, y + v).
  */
 void Diem::TinhTien(float u, float v)
 {
