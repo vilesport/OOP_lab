@@ -13,31 +13,23 @@
  */
 int main()
 {
-	// Khoi tao diem tam O tai toa do (1, 3)
+
 	Diem O(1, 3);
 
-	// Khoi tao mot doi tuong tam giac A
 	TamGiac A;
 
-	// Nhap toa do cac dinh cua tam giac
 	A.Nhap();
-
-	// Xuat toa do tam giac vua nhap
 	A.Xuat();
 
-	// Tinh tien tam giac theo vector (4, 5)
 	A.TinhTien(4, 5);
 	A.Xuat();
 
-	// Phong to tam giac theo tam O voi ti le 3
 	A.PhongTo(O, 3);
 	A.Xuat();
 
-	// Thu nho tam giac theo tam O voi ti le 3
 	A.ThuNho(O, 3);
 	A.Xuat();
 
-	// Quay tam giac quanh tam O voi goc 90 do
 	A.Quay(90, O);
 	A.Xuat();
 

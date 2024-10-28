@@ -11,16 +11,9 @@ float degree, v;
  */
 int main()
 {
-    // Nhap thong tin cua tam giac
     a.Nhap();
-
-    // Nhap goc quay (degree) va khoang cach tinh tien (v)
     cin >> degree >> v;
-
-    // Tinh tien tam giac theo goc quay va khoang cach da nhap
     a.TinhTien(degree, v);
-
-    // Xuat thong tin tam giac sau khi tinh tien
     a.Xuat();
 
     return 0;

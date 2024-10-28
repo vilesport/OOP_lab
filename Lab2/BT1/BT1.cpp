@@ -11,29 +11,28 @@
  */
 int main()
 {
-	Diem a;          // Tao diem a tai toa do (0, 0)
-	Diem b(3, 9);    // Tao diem b tai toa do (3, 9)
-	Diem c(b);       // Sao chep diem b thanh diem c
+	int u, v;
+	Diem a;
+	Diem b(3, 9);
+	Diem c(b);
 
 	cout << "a: ";
-	a.Xuat();  // Xuat toa do cua diem a
-	cout << "b: ";
-	b.Xuat();  // Xuat toa do cua diem b
-	cout << "c: ";
-	c.Xuat();  // Xuat toa do cua diem c
-
-	// Gan toa do y cua b cho a va toa do x cua c cho a
-	a.SetTungDo(b.GetTungDo());
-	a.SetHoanhDo(c.GetHoanhDo());
-
-	cout << "a: ";
-	a.Xuat();  // Xuat toa do cua diem a sau khi thay doi
+	a.Xuat();
 	cout << "b: ";
 	b.Xuat();
 	cout << "c: ";
 	c.Xuat();
 
-	// Nhap vector tinh tien tu nguoi dung va thuc hien tinh tien cho diem a
+	a.SetTungDo(b.GetTungDo());
+	a.SetHoanhDo(c.GetHoanhDo());
+
+	cout << "a: ";
+	a.Xuat();
+	cout << "b: ";
+	b.Xuat();
+	cout << "c: ";
+	c.Xuat();
+
 	cout << "Nhap vector tinh tien A(u, v): ";
 	cin >> u >> v;
 	a.TinhTien(u, v);
