@@ -1,7 +1,7 @@
 #include "Diem.h"
 
-int n, x, k;
-float d;
+int n, C;
+float d, x, k;
 
 int main()
 {
@@ -12,8 +12,8 @@ int main()
 
     for (int i = 0; i < n; i++)
     {
-        cin >> x;
-        switch (x)
+        cin >> C;
+        switch (C)
         {
         case 1:
             a.SetTungDo(a.GetTungDo() * 2);
