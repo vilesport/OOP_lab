@@ -69,18 +69,11 @@ void DaGiac::PhongTo(Diem O, float k)
  * @brief Thu nho tat ca cac dinh cua da giac theo tam O va ti le k.
  * @param O Diem tam thu nho
  * @param k Ti le thu nho
- * Thu nho da giac bang cach thu nho tung dinh cua da giac.
+ * Thu nho da giac bang cach phong to tam giac ti le 1/k.
  */
 void DaGiac::ThuNho(Diem O, float k)
 {
-	k = 1 / k;
-	float u = O.GetHoanhDo();
-	float v = O.GetTungDo();
-	for (int i = 0; i < n; i++)
-	{
-		Dinh[i].SetHoanhDo(u + k * (Dinh[i].GetHoanhDo() - u));
-		Dinh[i].SetTungDo(v + k * (Dinh[i].GetTungDo() - v));
-	}
+	PhongTo(O, 1/k);
 	return;
 }
 
