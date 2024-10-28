@@ -2,7 +2,7 @@
 
 int main()
 {
-	int u, v;
+	float u, v;
 	Diem a;
 	Diem b(3, 9);
 	Diem c(b);
