@@ -84,6 +84,7 @@ void Diem::SetHoanhDo(float Hoanh)
  * @brief Tinh tien diem theo mot goc va khoang cach.
  * @param degree Goc tinh bang do (degree).
  * @param v Khoang cach di chuyen.
+ * Su dung cong thuc tinh tien diem theo goc theta(radian) de tinh tien diem.
  */
 void Diem::TinhTien(float degree, float v)
 {
