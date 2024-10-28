@@ -17,6 +17,7 @@ void Poly::Nhap()
 
 /**
  * @brief Tinh trong tam cua da giac dua tren toa do cac diem.
+ * Bang cach tinh trung binh cua x va y cua tat ca tat diem cua da giac
  */
 void Poly::Timtrongtam()
 {
@@ -32,7 +33,7 @@ void Poly::Timtrongtam()
 /**
  * @brief Tinh goc giua mot diem a voi trong tam cua da giac.
  * @param a Diem can tinh goc.
- * @return Goc cua diem a voi trong tam (don vi radian).
+ * @return Goc cua diem a voi trong tam (don vi radian) so voi truc x.
  */
 float Poly::Goc(Diem a)
 {
@@ -40,7 +41,7 @@ float Poly::Goc(Diem a)
 }
 
 /**
- * @brief Sap xep cac diem cua da giac theo goc cua tung diem voi trong tam.
+ * @brief Sap xep cac diem cua da giac theo goc cua tung diem voi trong tam so voi truc x.
  */
 void Poly::Sapxep()
 {
@@ -51,6 +52,7 @@ void Poly::Sapxep()
 /**
  * @brief Tinh dien tich cua da giac su dung cong thuc Gauss (hoac Shoelace).
  * @return Dien tich cua da giac.
+ * Tinh dien tich cua da giac theo cong thuc Gauss
  */
 float Poly::Tinhdientich()
 {
