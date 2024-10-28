@@ -52,7 +52,7 @@ void Poly::Sapxep()
 /**
  * @brief Tinh dien tich cua da giac su dung cong thuc Gauss (hoac Shoelace).
  * @return Dien tich cua da giac.
- * Tinh dien tich cua da giac theo cong thuc Gauss
+ * Tinh dien tich cua da giac theo cong thuc Gauss.
  */
 float Poly::Tinhdientich()
 {
