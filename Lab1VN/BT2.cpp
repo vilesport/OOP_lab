@@ -25,7 +25,7 @@ void nhapPhanSo(PhanSo &phanSo) {
  * @param ps2 Phan so thu hai
  * @return True neu ps1 < ps2, nguoc lai false
  */
-bool soSanhPhanSo(const PhanSo &ps1, const PhanSo &ps2) {
+bool soSanhPhanSo(PhanSo &ps1, PhanSo &ps2) {
     // So sanh hai phan so dua tren gia tri tu so cua chung sau khi quy dong mau so
     return (ps1.tuSo * ps2.mauSo < ps2.tuSo * ps1.mauSo);
 }
@@ -48,7 +48,7 @@ PhanSo timlonk(vector<PhanSo> ds, int k) {
  * @param k Vi tri thu k
  * @return Phan so nho thu k neu ton tai, nguoc lai tra ve phan so (-1, 1) de bieu thi khong co
  */
-PhanSo timnhok(const vector<PhanSo> &ds, int k) {
+PhanSo timnhok(vector<PhanSo> &ds, int k) {
     if (k <= 0 || k > ds.size()) return {-1, 1}; // Khong ton tai
     return ds[k - 1];
 }

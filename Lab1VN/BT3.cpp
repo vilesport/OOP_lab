@@ -17,7 +17,7 @@ struct PhanSo {
  * @param ps2 Phan so thu hai
  * @return True neu ps1 < ps2, nguoc lai false
  */
-bool soSanhPhanSo(const PhanSo &ps1, const PhanSo &ps2) {
+bool soSanhPhanSo(PhanSo &ps1, PhanSo &ps2) {
     // So sanh hai phan so dua tren gia tri tu so cua chung sau khi quy dong mau so
     return (ps1.tuSo * ps2.mauSo < ps2.tuSo * ps1.mauSo);
 }
@@ -65,7 +65,7 @@ void rutGonPhanSo(PhanSo &phanSo) {
  * @param ps2 Phan so thu hai
  * @return Phan so ket qua sau khi nhan
  */
-PhanSo nhanPhanSo(const PhanSo &ps1, const PhanSo &ps2) {
+PhanSo nhanPhanSo(PhanSo &ps1, PhanSo &ps2) {
     PhanSo ketQua;
     ketQua.tuSo = ps1.tuSo * ps2.tuSo;
     ketQua.mauSo = ps1.mauSo * ps2.mauSo;
@@ -79,7 +79,7 @@ PhanSo nhanPhanSo(const PhanSo &ps1, const PhanSo &ps2) {
  * @param dich Phan so dich
  * @return Tap hop con co so luong nho nhat neu co, nguoc lai tra ve vector rong
  */
-vector<PhanSo> timTapHopCon(const vector<PhanSo> &ds, const PhanSo &dich) {
+vector<PhanSo> timTapHopCon(vector<PhanSo> &ds, PhanSo &dich) {
     int n = ds.size();
     vector<PhanSo> Min;
     for (int i = 1; i < (1 << n); ++i) {
@@ -116,7 +116,7 @@ int main() {
     vector<PhanSo> ketQua = timTapHopCon(ds, dich);
     if (!ketQua.empty()) {
         sort(ketQua.begin(), ketQua.end(), soSanhPhanSo);
-        for (const auto &phanSo : ketQua) {
+        for ( auto &phanSo : ketQua) {
             cout << phanSo.tuSo << "/" << phanSo.mauSo << " ";
         }
         cout << "\n";

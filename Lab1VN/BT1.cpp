@@ -32,7 +32,7 @@ void nhapPhanSo(PhanSo &phanSo) {
  * @param ps2 Phan so thu hai
  * @return True neu ps1 < ps2, nguoc lai false
  */
-bool soSanhPhanSo(const PhanSo &ps1, const PhanSo &ps2) {
+bool soSanhPhanSo(PhanSo &ps1, PhanSo &ps2) {
     // So sanh hai phan so dua tren gia tri tu so cua chung sau khi quy dong mau so
     return (ps1.tuSo * ps2.mauSo < ps2.tuSo * ps1.mauSo);
 }
@@ -42,9 +42,9 @@ bool soSanhPhanSo(const PhanSo &ps1, const PhanSo &ps2) {
  * @param ds Danh sach cac phan so
  * @return Phan so nho nhat
  */
-PhanSo timMin(const vector<PhanSo> &ds) {
+PhanSo timMin(vector<PhanSo> &ds) {
     PhanSo Min = ds[0];
-    for (const auto &phanSo : ds) {
+    for (auto &phanSo : ds) {
         if (soSanhPhanSo(phanSo, Min)) {
             Min = phanSo;
         }
@@ -57,9 +57,9 @@ PhanSo timMin(const vector<PhanSo> &ds) {
  * @param ds Danh sach cac phan so
  * @return Phan so lon nhat
  */
-PhanSo timMax(const vector<PhanSo> &ds) {
+PhanSo timMax(vector<PhanSo> &ds) {
     PhanSo Max = ds[0];
-    for (const auto &phanSo : ds) {
+    for (auto &phanSo : ds) {
         if (soSanhPhanSo(Max, phanSo)) {
             Max = phanSo;
         }
