@@ -2,7 +2,7 @@
 #include "Diem.h"
 
 /**
- * @brief Khoi tao mot diem voi toa do (0, 0).
+ * @brief Khoi tao diem tai toa do (0, 0).
  */
 Diem::Diem()
 {
@@ -11,9 +11,9 @@ Diem::Diem()
 }
 
 /**
- * @brief Khoi tao mot diem voi toa do duoc chi dinh.
- * @param Hoanh Hoanh do cua diem.
- * @param Tung Tung do cua diem.
+ * @brief Khoi tao diem tai toa do cho truoc.
+ * @param Hoanh Hoanh do cua diem
+ * @param Tung Tung do cua diem
  */
 Diem::Diem(float Hoanh, float Tung)
 {
@@ -23,8 +23,8 @@ Diem::Diem(float Hoanh, float Tung)
 }
 
 /**
- * @brief Khoi tao mot diem bang cach sao chep toa do tu mot diem khac.
- * @param x Diem can sao chep.
+ * @brief Sao chep khoi tao diem moi tu mot diem khac.
+ * @param x Doi tuong Diem can sao chep
  */
 Diem::Diem(const Diem& x)
 {
@@ -34,7 +34,7 @@ Diem::Diem(const Diem& x)
 }
 
 /**
- * @brief Xuat toa do cua diem.
+ * @brief Xuat toa do diem ra man hinh.
  */
 void Diem::Xuat()
 {
@@ -43,8 +43,8 @@ void Diem::Xuat()
 }
 
 /**
- * @brief Lay gia tri tung do cua diem.
- * @return Gia tri tung do.
+ * @brief Lay tung do cua diem.
+ * @return Gia tri tung do cua diem
  */
 float Diem::GetTungDo()
 {
@@ -52,8 +52,8 @@ float Diem::GetTungDo()
 }
 
 /**
- * @brief Lay gia tri hoanh do cua diem.
- * @return Gia tri hoanh do.
+ * @brief Lay hoanh do cua diem.
+ * @return Gia tri hoanh do cua diem
  */
 float Diem::GetHoanhDo()
 {
@@ -61,8 +61,8 @@ float Diem::GetHoanhDo()
 }
 
 /**
- * @brief Thiet lap gia tri tung do cua diem.
- * @param Tung Gia tri moi cua tung do.
+ * @brief Dat tung do moi cho diem.
+ * @param Tung Gia tri tung do moi
  */
 void Diem::SetTungDo(float Tung)
 {
@@ -71,8 +71,8 @@ void Diem::SetTungDo(float Tung)
 }
 
 /**
- * @brief Thiet lap gia tri hoanh do cua diem.
- * @param Hoanh Gia tri moi cua hoanh do.
+ * @brief Dat hoanh do moi cho diem.
+ * @param Hoanh Gia tri hoanh do moi
  */
 void Diem::SetHoanhDo(float Hoanh)
 {
@@ -81,15 +81,13 @@ void Diem::SetHoanhDo(float Hoanh)
 }
 
 /**
- * @brief Tinh tien diem theo mot goc va khoang cach.
- * @param degree Goc tinh bang do (degree).
- * @param v Khoang cach di chuyen.
- * Su dung cong thuc tinh tien diem theo goc theta(radian) de tinh tien diem.
+ * @brief Tinh tien diem theo vector (u, v).
+ * @param u Khoang cach tinh tien theo phuong x
+ * @param v Khoang cach tinh tien theo phuong y
  */
-void Diem::TinhTien(float degree, float v)
+void Diem::TinhTien(float u, float v)
 {
-	float theta = (degree / 180) * PI;
-	iHoanh += v * cos(theta);
-	iTung += v * sin(theta);
+	iHoanh += u;
+	iTung += v;
 	return;
 }
