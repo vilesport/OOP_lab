@@ -18,7 +18,7 @@ int main()
 	A.ThuNho(O, 3);
 	A.Xuat();
 
-	A.Quay(90, O);
+	A.Quay(180, O);
 	A.Xuat();
 
 	return 0;
