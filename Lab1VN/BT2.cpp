@@ -30,29 +30,6 @@ bool soSanhPhanSo(PhanSo &ps1, PhanSo &ps2) {
     return (ps1.tuSo * ps2.mauSo < ps2.tuSo * ps1.mauSo);
 }
 
-/**
- * @brief Tim phan so lon thu k trong danh sach cac phan so
- * @param ds Danh sach cac phan so
- * @param k Vi tri thu k
- * @return Phan so lon thu k neu ton tai, nguoc lai tra ve phan so (-1, 1) de bieu thi khong co
- */
-PhanSo timlonk(vector<PhanSo> ds, int k) {
-    sort(ds.begin(), ds.end(), soSanhPhanSo);
-    if (k <= 0 || k > ds.size()) return {-1, 1}; // Khong ton tai
-    return ds[ds.size() - k];
-}
-
-/**
- * @brief Tim phan so nho thu k trong danh sach cac phan so
- * @param ds Danh sach cac phan so
- * @param k Vi tri thu k
- * @return Phan so nho thu k neu ton tai, nguoc lai tra ve phan so (-1, 1) de bieu thi khong co
- */
-PhanSo timnhok(vector<PhanSo> &ds, int k) {
-    if (k <= 0 || k > ds.size()) return {-1, 1}; // Khong ton tai
-    return ds[k - 1];
-}
-
 int main() {
     int n, k;
     cin >> n, k;
@@ -65,14 +42,11 @@ int main() {
     // Sap xep danh sach phan so theo gia tri thuc cua no
     sort(ds.begin(), ds.end(), soSanhPhanSo);
 
-    PhanSo lonk = timlonk(ds, k);
-    PhanSo nhok = timnhok(ds, k);
+    PhanSo lonk = ds[ds.size() - k];
+    PhanSo nhok = ds[k - 1];
 
-    if (lonk.mauSo != -1) {
+    if (k > 0 && k <= ds.size()) {
         cout << lonk.tuSo << "/" << lonk.mauSo << " ";
-    }
-
-    if (nhok.mauSo != -1) {
         cout << nhok.tuSo << "/" << nhok.mauSo << "\n";
     }
 
