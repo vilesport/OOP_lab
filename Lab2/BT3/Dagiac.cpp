@@ -38,6 +38,7 @@ void DaGiac::Xuat()
  * @brief Tinh tien tat ca cac dinh cua da giac theo vector (u, v).
  * @param u Khoang tinh tien theo phuong x
  * @param v Khoang tinh tien theo phuong y
+ * Tinh tien da giac bang cach tinh tien tat ca dinh cua da giac.
  */
 void DaGiac::TinhTien(float u, float v)
 {
@@ -50,6 +51,7 @@ void DaGiac::TinhTien(float u, float v)
  * @brief Phong to tat ca cac dinh cua da giac theo tam O va ti le k.
  * @param O Diem tam phong to
  * @param k Ti le phong to
+ * Phong to da giac bang cach phong to ta ca dinh cua da giac
  */
 void DaGiac::PhongTo(Diem O, float k)
 {
@@ -67,6 +69,7 @@ void DaGiac::PhongTo(Diem O, float k)
  * @brief Thu nho tat ca cac dinh cua da giac theo tam O va ti le k.
  * @param O Diem tam thu nho
  * @param k Ti le thu nho
+ * Thu nho da giac bang cach thu nho tung dinh cua da giac.
  */
 void DaGiac::ThuNho(Diem O, float k)
 {
@@ -85,6 +88,7 @@ void DaGiac::ThuNho(Diem O, float k)
  * @brief Quay tat ca cac dinh cua da giac quanh diem O voi goc quay theta.
  * @param theta Goc quay tinh bang do
  * @param O Diem tam quay
+ * Quay da giac bang cach quay tung dinh cua da giac
  */
 void DaGiac::Quay(float theta, Diem O)
 {
