@@ -3,9 +3,6 @@
 ThiSinh* arr;
 int n;
 
-/**
- * @brief Diem bat dau cua chuong trinh, thuc hien nhap va xuat thong tin cua cac thi sinh.
- */
 int main()
 {
 	cout << "Nhap so luong thi sinh: ";
