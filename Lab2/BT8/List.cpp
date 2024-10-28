@@ -3,7 +3,8 @@
 /**
  * @brief Them mot phan tu vao cuoi danh sach.
  * @param x Phan tu can them vao.
- * Thuc hien them vao bang cach tao 1 array moi voi size + 1 phan tu, sau do copy array cu sang array moi, gan phan tu cuoi cung cua array moi = x va delete array cu
+ * Thuc hien them vao bang cach tao 1 array moi voi size + 1 phan tu, sau do copy array cu sang array moi
+ * gan phan tu cuoi cung cua array moi = x va delete array cu.
  */
 void List::Push(double x)
 {
@@ -19,8 +20,8 @@ void List::Push(double x)
 /**
  * @brief Xoa lan xuat hien dau tien cua phan tu x trong danh sach.
  * @param x Phan tu can xoa.
- * Tim phan tu x dau tien can xoa, sau do doi cac phan tu o sau x ghi de len x de xoa x khoi mang
- * Cuoi cung tao 1 array moi co size-1 roi sao chep array sau khi xoa sang, delete array cu
+ * Tim phan tu x dau tien can xoa, sau do doi cac phan tu o sau x ghi de len x de xoa x khoi mang.
+ * Cuoi cung tao 1 array moi co size-1 roi sao chep array sau khi xoa sang, delete array cu.
  */
 void List::Pop(double x)
 {
@@ -42,7 +43,8 @@ void List::Pop(double x)
 /**
  * @brief Xoa tat ca cac lan xuat hien cua phan tu x trong danh sach.
  * @param x Phan tu can xoa.
- * Dem so luong phan tu = x luu vao count, sau do tao 1 array moi co size - count phan tu, sao chep cac phan tu khac x vao array moi va delete array cu
+ * Dem so luong phan tu = x luu vao count, sau do tao 1 array moi co size - count phan tu
+ * sao chep cac phan tu khac x vao array moi va delete array cu.
  */
 void List::Delete(double x)
 {
