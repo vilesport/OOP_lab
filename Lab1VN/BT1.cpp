@@ -42,14 +42,14 @@ bool soSanhPhanSo(const PhanSo &ps1, const PhanSo &ps2) {
  * @param ds Danh sach cac phan so
  * @return Phan so nho nhat
  */
-PhanSo timMIn(const vector<PhanSo> &ds) {
-    PhanSo MIn = ds[0];
+PhanSo timMin(const vector<PhanSo> &ds) {
+    PhanSo Min = ds[0];
     for (const auto &phanSo : ds) {
-        if (soSanhPhanSo(phanSo, MIn)) {
-            MIn = phanSo;
+        if (soSanhPhanSo(phanSo, Min)) {
+            Min = phanSo;
         }
     }
-    return MIn;
+    return Min;
 }
 
 /**
@@ -78,10 +78,10 @@ int main() {
         nhapPhanSo(ds[i]);
     }
 
-    PhanSo MIn = timMIn(ds);
+    PhanSo Min = timMin(ds);
     PhanSo Max = timMax(ds);
 
-    cout << MIn.tuSo << "/" << MIn.mauSo << " ";
+    cout << Min.tuSo << "/" << Min.mauSo << " ";
     cout << Max.tuSo << "/" << Max.mauSo << "\n";
 
     return 0;
