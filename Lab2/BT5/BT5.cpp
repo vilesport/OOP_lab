@@ -3,12 +3,6 @@
 int n, x, k;
 float d;
 
-/**
- * @brief Diem bat dau cua chuong trinh. Thuc hien cac thao tac voi doi tuong Diem dua tren lua chon cua nguoi dung.
- *
- * Chuong trinh nhap vao cac gia tri va thuc hien cac thao tac nhu nhan doi toa do, dat toa do ve 0,
- * hoac tinh tien diem theo chi so do nguoi dung chon.
- */
 int main()
 {
     cin >> x >> k;
