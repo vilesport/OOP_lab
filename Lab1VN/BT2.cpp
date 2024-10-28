@@ -25,7 +25,7 @@ void nhapPhanSo(PhanSo &phanSo) {
  * @param ps2 Phan so thu hai
  * @return True neu ps1 < ps2, nguoc lai false
  */
-bool soSanhPhanSo(PhanSo &ps1, PhanSo &ps2) {
+bool soSanhPhanSo(PhanSo ps1, PhanSo ps2) {
     // So sanh hai phan so dua tren gia tri tu so cua chung sau khi quy dong mau so
     return (ps1.tuSo * ps2.mauSo < ps2.tuSo * ps1.mauSo);
 }

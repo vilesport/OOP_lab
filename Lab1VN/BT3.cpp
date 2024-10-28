@@ -17,7 +17,7 @@ struct PhanSo {
  * @param ps2 Phan so thu hai
  * @return True neu ps1 < ps2, nguoc lai false
  */
-bool soSanhPhanSo(PhanSo &ps1, PhanSo &ps2) {
+bool soSanhPhanSo(PhanSo ps1, PhanSo ps2) {
     // So sanh hai phan so dua tren gia tri tu so cua chung sau khi quy dong mau so
     return (ps1.tuSo * ps2.mauSo < ps2.tuSo * ps1.mauSo);
 }
@@ -27,15 +27,7 @@ bool soSanhPhanSo(PhanSo &ps1, PhanSo &ps2) {
  * @param phanSo Phan so can nhap
  */
 void nhapPhanSo(PhanSo &phanSo) {
-    cout << "Nhap tu so: ";
-    cin >> phanSo.tuSo;
-    do {
-        cout << "Nhap mau so (khac 0): ";
-        cin >> phanSo.mauSo;
-        if (phanSo.mauSo == 0) {
-            cout << "Mau so khong the bang 0. Vui long nhap lai.\n";
-        }
-    } while (phanSo.mauSo == 0);
+    cin >> phanSo.tuSo >> phanSo.mauSo;
 }
 
 /**
@@ -103,7 +95,6 @@ vector<PhanSo> timTapHopCon(vector<PhanSo> &ds, PhanSo &dich) {
 
 int main() {
     int n;
-    cout << "Nhap so luong phan so: ";
     cin >> n;
 
     vector<PhanSo> ds(n);
@@ -112,6 +103,7 @@ int main() {
 
     PhanSo dich;
     nhapPhanSo(dich);
+    rutGonPhanSo(dich);
 
     vector<PhanSo> ketQua = timTapHopCon(ds, dich);
     if (!ketQua.empty()) {
