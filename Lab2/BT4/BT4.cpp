@@ -3,6 +3,14 @@
 ThiSinh* arr;
 int n;
 
+/**
+ * @brief Diem bat dau cua chuong trinh. Thuc hien nhap thong tin thi sinh, in ra cac thi sinh co tong diem lon hon 15 va tim thi sinh co tong diem cao nhat.
+ * 
+ * Chuong trinh nhap vao thong tin cua n thi sinh, bao gom ten, MSSV, ngay sinh, va diem cac mon Toan, Van, Anh. Sau do, chuong trinh se in ra cac thi sinh co tong diem
+ * cao hon 15 va tim ra thi sinh co tong diem cao nhat.
+ * 
+ * @return int Tra ve 0 khi chuong trinh ket thuc.
+ */
 int main()
 {
 	cout << "Nhap so luong thi sinh: ";
