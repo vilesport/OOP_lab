@@ -91,3 +91,17 @@ void Diem::TinhTien(float u, float v)
 	iTung += v;
 	return;
 }
+
+/**
+ * @brief Quay diem quanh diem tam O voi goc quay bang degree (do).
+ * @param degree Goc quay tinh bang do
+ * @param O Diem tam quay
+ * Quay diem voi goc va tam O bang cong thuc bien doi xoay trong toa do 2D.
+ */
+void Diem::Quay(float degree, Diem O)
+{
+	float theta = (degree / 180) * PI;
+	iHoanh = O.iHoanh + (iHoanh - O.iHoanh) * cos(theta) - (iTung - O.iTung) * sin(theta);
+	iTung = O.iTung + (iHoanh - O.iHoanh) * sin(theta) + (iTung - O.iTung) * cos(theta);
+	return;
+}
