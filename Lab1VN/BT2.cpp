@@ -32,7 +32,7 @@ bool soSanhPhanSo(PhanSo ps1, PhanSo ps2) {
 
 int main() {
     int n, k;
-    cin >> n, k;
+    cin >> n >> k;
 
     vector<PhanSo> ds(n);
     for (int i = 0; i < n; ++i) {
