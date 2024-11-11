@@ -11,6 +11,14 @@ int main()
 	cout << "Nhap so giay c: ";
 	cin >> c;
 	cout << "a: " << a << "\nb: " << b << "\nc: " << c << " | " << ThoiGian(c) << "\n";
+	cout << "a++: " << a++ << " | ";
+	cout << a << "\n";
+	cout << "++a: " << ++a << " | ";
+	cout << a << "\n";
+	cout << "a--: " << a-- << " | ";
+	cout << a << "\n";
+	cout << "--a: " << --a << " | ";
+	cout << a << "\n";
 	cout << "Ket qua a voi b:\n";
 	cout << "a + b = " << a + b << "\n";
 	cout << "a - b = " << a - b << "\n";

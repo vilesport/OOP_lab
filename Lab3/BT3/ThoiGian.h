@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
 using namespace std;
-#define MAX 90000
+#define MAX 86400
 
 class ThoiGian
 {

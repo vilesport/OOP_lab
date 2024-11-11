@@ -1,20 +1,39 @@
-// BT4.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
-#include <iostream>
+#include "Date.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	NgayThangNam a, b;
+	int c;
+	cout << "Nhap ngay a b\na: ";
+	cin >> a;
+	cout << "b: ";
+	cin >> b;
+	cout << "Nhap so ngay c: ";
+	cin >> c;
+	cout << "a: " << a << "\nb: " << b << "\nc: " << c << " | " << NgayThangNam(c) << "\n";
+	cout << "a++: " << a++ << " | ";
+	cout << a << "\n";
+	cout << "++a: " << ++a << " | ";
+	cout << a << "\n";
+	cout << "a--: " << a-- << " | ";
+	cout << a << "\n";
+	cout << "--a: " << --a << " | ";
+	cout << a << "\n";
+	cout << "Ket qua a voi b:\n";
+	cout << "a - b = " << a - b << "\n";
+	cout << "a == b = " << ((a == b) ? "True" : "False") << "\n";
+	cout << "a != b = " << ((a != b) ? "True" : "False") << "\n";
+	cout << "a >= b = " << ((a >= b) ? "True" : "False") << "\n";
+	cout << "a <= b = " << ((a <= b) ? "True" : "False") << "\n";
+	cout << "a > b = " << ((a > b) ? "True" : "False") << "\n";
+	cout << "a < b = " << ((a < b) ? "True" : "False") << "\n";
+	cout << "Ket qua a voi c:\n";
+	cout << "a + c = " << a + c << "\n";
+	cout << "a - c = " << a - c << "\n";
+	cout << "a == c = " << ((a == c) ? "True" : "False") << "\n";
+	cout << "a != c = " << ((a != c) ? "True" : "False") << "\n";
+	cout << "a >= c = " << ((a >= c) ? "True" : "False") << "\n";
+	cout << "a <= c = " << ((a <= c) ? "True" : "False") << "\n";
+	cout << "a > c = " << ((a > c) ? "True" : "False") << "\n";
+	cout << "a < c = " << ((a < c) ? "True" : "False") << "\n";
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
