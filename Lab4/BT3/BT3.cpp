@@ -23,12 +23,19 @@ void TinhKeu()
 	}
 }
 
+int n;
+
 int main()
 {
-	srand((unsigned int)time(0));
-	TrangTrai[0] = new Bo(rand() % 3 + 1);
-	TrangTrai[1] = new Cuu(rand() % 3 + 1);
-	TrangTrai[2] = new De(rand() % 3 + 1);
+	cout << "Nhap so luong bo: ";
+	cin >> n;
+	TrangTrai[0] = new Bo(n);
+	cout << "Nhap so luong cuu: ";
+	cin >> n;
+	TrangTrai[1] = new Cuu(n);
+	cout << "Nhap so luong de: ";
+	cin >> n;
+	TrangTrai[2] = new De(n);
 	cout << "Cac tieng keu nghe duoc khi chu di vang:\n";
 	TinhKeu();
 	for (int i = 0; i < 3; i++)
