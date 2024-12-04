@@ -1,11 +1,19 @@
 #include "De.h"
 
+/**
+ * @brief Phat ra tieng keu cua de.
+ * @param Khong co tham so dau vao.
+ */
 void De::Keu()
 {
 	printf("Meeeee\n");
 	return;
 }
 
+/**
+ * @brief Sinh con cho de, tang so luong de hien co.
+ * @param Khong co tham so dau vao.
+ */
 void De::SinhCon()
 {
 	srand((unsigned int)time(0));
@@ -14,6 +22,10 @@ void De::SinhCon()
 		SoLuong += rand() % 2;
 }
 
+/**
+ * @brief Tinh tong so sua ma tat ca de trong trang trai cho trong mot chu ky.
+ * @param Khong co tham so dau vao.
+ */
 void De::TinhSua()
 {
 	srand((unsigned int)time(0));

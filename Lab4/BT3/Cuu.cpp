@@ -1,11 +1,19 @@
 #include "Cuu.h"
 
+/**
+ * @brief Phat ra tieng keu cua cuu.
+ * @param Khong co tham so dau vao.
+ */
 void Cuu::Keu()
 {
 	printf("Baaaa\n");
 	return;
 }
 
+/**
+ * @brief Sinh con cho cuu, tang so luong cuu hien co.
+ * @param Khong co tham so dau vao.
+ */
 void Cuu::SinhCon()
 {
 	srand((unsigned int)time(0));
@@ -14,6 +22,10 @@ void Cuu::SinhCon()
 		SoLuong += rand() % 3;
 }
 
+/**
+ * @brief Tinh tong so sua ma tat ca cuu trong trang trai cho trong mot chu ky.
+ * @param Khong co tham so dau vao.
+ */
 void Cuu::TinhSua()
 {
 	srand((unsigned int)time(0));

@@ -7,6 +7,14 @@ string Con[3] = { "bo", "cuu", "de" };
 GiaSuc* TrangTrai[3];
 long long Keu[3];
 
+/**
+ * @brief Tinh toan va phat ra tieng keu ngau nhien cua gia suc trong trang trai.
+ *
+ * Chuong trinh se chon ngau nhien cac loai gia suc co so luong lon hon 0
+ * va phat ra tieng keu tuong ung cua chung.
+ *
+ * @param Khong co tham so dau vao.
+ */
 void TinhKeu()
 {
 	for (int i = 0; i < 3; i++)
@@ -25,6 +33,13 @@ void TinhKeu()
 
 int n;
 
+/**
+ * @brief Chuong trinh quan ly trang trai gia suc.
+ *
+ * Chuong trinh nhap thong tin so luong cua cac loai gia suc (bo, cuu, de),
+ * tinh tieng keu cua chung khi chu di vang, sinh con cho moi loai gia suc,
+ * va tinh tong so sua ma tat ca gia suc cho.
+ */
 int main()
 {
 	cout << "Nhap so luong bo: ";

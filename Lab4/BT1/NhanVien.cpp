@@ -1,5 +1,9 @@
 #include "NhanVien.h"
 
+/**
+ * @brief Nhap thong tin co ban cua nhan vien, bao gom ma so, ten, va luong co ban.
+ * @param Khong co tham so dau vao.
+ */
 void NhanVien::Nhap()
 {
 	cout << "Ma so nhan vien: ";
@@ -11,6 +15,10 @@ void NhanVien::Nhap()
 	cin >> LuongCoBan;
 }
 
+/**
+ * @brief Xuat thong tin co ban cua nhan vien, bao gom ma so, ten, va luong co ban.
+ * @param Khong co tham so dau vao.
+ */
 void NhanVien::Xuat()
 {
 	printf("Ma so nhan vien: %s\n", &MaSoNhanVien[0]);
